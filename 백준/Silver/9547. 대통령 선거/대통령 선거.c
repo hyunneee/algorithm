@@ -1,4 +1,5 @@
 #include <stdio.h>
+#pragma warning(disable:4996)
 
 int main(void){
     int T;
@@ -58,7 +59,5 @@ int main(void){
             else if(max2>=(double)V/2)
                 printf("%d %d\n",max2_idx,2);
             }
-        
     }
-    return 0;
 }
