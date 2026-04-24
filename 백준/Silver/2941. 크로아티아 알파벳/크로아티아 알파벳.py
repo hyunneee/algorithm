@@ -1,0 +1,33 @@
+cnt=0
+alpha=input()
+len_al=len(alpha)
+i=0
+while(i<len(alpha)):
+    if(alpha[i:i+2]=='c='):
+        cnt+=1
+        i+=1
+    elif(alpha[i:i+2]=='c-'):
+        cnt+=1
+        i+=1
+    elif(alpha[i:i+3]=='dz='):
+        cnt+=1
+        i+=2
+    elif(alpha[i:i+2]=='d-'):
+        cnt+=1
+        i+=1
+    elif(alpha[i:i+2]=='lj'):
+        cnt+=1
+        i+=1
+    elif(alpha[i:i+2]=='nj'):
+        cnt+=1
+        i+=1
+    elif(alpha[i:i+2]=='s='):
+        cnt+=1
+        i+=1
+    elif(alpha[i:i+2]=='z='):
+        cnt+=1
+        i+=1
+    else:
+        cnt+=1
+    i+=1
+print(cnt)
