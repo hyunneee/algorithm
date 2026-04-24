@@ -1,0 +1,11 @@
+a,b,v=map(int,input().split())
+day=1
+if(v==a):
+    print(day)
+else:
+    if((v-a)%(a-b)==0):
+        day+=(v-a)//(a-b)
+        print(day)
+    else:
+        day=day+((v-a)//(a-b))+1
+        print(day)
