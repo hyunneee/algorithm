@@ -9,7 +9,7 @@ int main(void){
         int max2=0;
         int max_idx=0;
         int max2_idx=0;
-        int arr[101][101]={0,}; //arr[V수만큼][C후보자수만큼]
+        int arr[101][101]={0,};
         int cnt[101]={0,};
         int C;
         int V;
@@ -21,7 +21,8 @@ int main(void){
             }
         }
         for(int i=0;i<V;i++){
-            cnt[arr[i][0]]++;
+            if(arr[i][0]!=0)
+                cnt[arr[i][0]]++;
         }
         
         for(int i=0;i<=C;i++){
