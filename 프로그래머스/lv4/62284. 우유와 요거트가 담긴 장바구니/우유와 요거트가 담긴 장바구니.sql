@@ -1,0 +1,4 @@
+-- 코드를 입력하세요
+SELECT a.CART_ID FROM CART_PRODUCTS AS a, CART_PRODUCTS AS b
+WHERE (a.CART_ID = b.CART_ID) AND (a.NAME = 'Milk') AND (b.NAME = 'Yogurt')
+GROUP BY a.CART_ID
