@@ -1,6 +1,4 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.util.Scanner;
 
 public class Main {
     static int w = 0, h=0, cnt=0;
@@ -8,13 +6,12 @@ public class Main {
     static boolean[][] visited;
     static int[] dr = {-1, -1, -1, 0, 1, 1, 1, 0};
     static int[] dc = {-1,  0,  1, 1, 1, 0,-1,-1};
-    public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
         while (true) {
-            String[] wh = br.readLine().split(" ");
-            w = Integer.parseInt(wh[0]);
-            h = Integer.parseInt(wh[1]);
+            w = sc.nextInt();
+            h = sc.nextInt();
             cnt = 0;
             if (w == 0 && h == 0) {
                 break;
@@ -22,9 +19,8 @@ public class Main {
             map = new int[h][w];
             visited = new boolean[h][w];
             for (int i = 0; i < h; i++) {
-                String[] str = br.readLine().split(" ");
                 for (int j = 0; j < w; j++) {
-                    map[i][j] = Integer.parseInt(str[j]);
+                    map[i][j] =sc.nextInt();
                 }
             }
 
