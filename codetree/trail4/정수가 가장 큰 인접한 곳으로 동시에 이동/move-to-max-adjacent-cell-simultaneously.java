@@ -29,7 +29,7 @@ public class Main {
         for(int i=0;i<marbles.length;i++){
             int r = marbles[i][0];
             int c = marbles[i][1];
-            int maxVal = -1, tmpIdx = 0;
+            int maxVal = 1, tmpIdx = 0;
             boolean canMove = false;
             for(int d=0;d<4;d++){
                 int tr = r + dir[d][0];
