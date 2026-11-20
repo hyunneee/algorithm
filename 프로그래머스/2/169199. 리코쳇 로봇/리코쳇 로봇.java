@@ -34,15 +34,8 @@ class Solution {
                         break;
                 };
             }
-        } // char로 dist 저장하기 
+        } 
         
-        
-        // for(int i=0;i<board.length;i++){
-        //     for(int j=0;j<board[i].length();j++){
-        //         System.out.print(dist[i][j]+" ");
-        //     }
-        //     System.out.println();
-        // }
         answer = bfs(start);
 
         return answer;
@@ -60,7 +53,6 @@ class Solution {
         q.add(new int[]{start[0],start[1], 0});
         while(!q.isEmpty()){
             int[] tmp = q.poll(); 
-            // System.out.println("temp="+tmp[0]+" "+tmp[1]+" "+tmp[2]);
             if(dist[tmp[0]][tmp[1]] == 3){ // 3이 G임 
                 return tmp[2];
             }
