@@ -22,11 +22,3 @@ class Solution {
         bfs(idx+1, sum - values[idx]);
     }
 }
-
-// 종료 조건 
-// 현재 idx가 numbers.length 이면서 
-// 만약 target 이면 cnt++
-// 아니면 return ; 
-// 현재 현재 sum이 target을 넘어가면 return 
-
-// 맨날 가져가야 하는건 sum, 현재 idx 
